@@ -178,7 +178,7 @@ function displayProjects(projects) {
     projectsContainer.innerHTML += `<div class="project">
             <div class="main-card">
               <div class="card__face card__face--front">
-                <img class="project-img" src=${project.image} />
+                <img class="project-img" src=${project.image} alt=${project.title}/>
                 <div class="project-title"><p>${project.title}</p></div>
               </div>
               <div class="card__face card__face--back">
