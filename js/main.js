@@ -178,8 +178,7 @@ function displayProjects(projects) {
     projectsContainer.innerHTML += `<div class="project">
             <div class="main-card">
               <div class="card__face card__face--front">
-                <div class="project-img" style="background-image: url(${project.image})">
-                </div>
+                <img class="project-img" src=${project.image} />
                 <div class="project-title"><p>${project.title}</p></div>
               </div>
               <div class="card__face card__face--back">
