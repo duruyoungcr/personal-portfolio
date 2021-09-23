@@ -10,7 +10,7 @@
   --main-white: #fff;
   --main-black: #222831;
   --main-color: #f73859;
-  --main-blue: #07689f;
+  --main-blue: #119cec;
   --main-color-light: #f7385921;
 }
 
@@ -269,6 +269,10 @@ nav a {
 .name,
 .typewriter {
   color: var(--main-blue);
+  font-family: 'Rampart One', cursive;
+}
+.typewriter .text {
+  font-family: 'Rampart One', cursive;
 }
 .hero-text h2 {
   margin-top: 0.5rem;
