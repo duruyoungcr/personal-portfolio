@@ -7,10 +7,11 @@
 :root {
   --webkit-transition: all 0.3s ease-in-out;
   --transition: all 0.3s ease-in-out;
-  --main-white: #eeeeee;
+  --main-white: #fff;
   --main-black: #222831;
   --main-color: #f73859;
   --main-blue: #07689f;
+  --main-color-light: #f7385921;
 }
 
 /* go up and go down buttons */
@@ -180,7 +181,7 @@ nav a {
   list-style: none;
   margin: 1rem;
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 18px;
   transition: var(--transition);
   -webkit-transition: var(--transition);
   letter-spacing: 0.7rem;
@@ -189,7 +190,7 @@ nav a {
   font-weight: 200;
 }
 .nav-list li:hover {
-  color: var(--main-blue);
+  color: wheat;
   opacity: 0.9;
 }
 .sm-list li {
@@ -216,10 +217,12 @@ nav a {
   height: 2px;
   background-color: var(--main-white);
 }
-.logo:hover {
-  transform: scale(1.05);
-  -webkit-transform: scale(1.05);
+.logo, .logo a {
+  display: flex;
+  justify-content:center;
+  align-items:center;
 }
+
 
 /* end of navbar */
 /* hero */
@@ -268,6 +271,7 @@ nav a {
   color: var(--main-blue);
 }
 .hero-text h2 {
+  margin-top: 0.5rem;
   font-size: 2rem;
   text-transform: capitalize;
   font-weight: 100;
@@ -603,6 +607,7 @@ nav a {
 @media screen and (max-width: 475px) {
   .about-text {
     padding: 0;
+    text-align: left;
   }
   p {
     font-size: 1rem;
@@ -612,7 +617,7 @@ nav a {
 
 /* services section */
 .services {
-  background: var(--main-color);
+  background: var(--main-color-light);
   min-height: 90vh;
   width: 100%;
   padding: 2rem;
@@ -635,7 +640,7 @@ nav a {
   text-align: center;
   text-transform: capitalize;
   margin-bottom: 1rem;
-  color: var(--main-white);
+  color: var(--main-color);
 }
 .service-text p {
   margin: 1rem 0;
@@ -1186,19 +1191,22 @@ textarea:focus {
   justify-content: space-between;
   align-items: center;
   color: var(--main-white);
-  padding: 1rem 5%;
+  padding: 0rem 5%;
   letter-spacing: 0.3rem;
   width: 100%;
 }
+.footer p {
+  color: var(--main-white)
+}
 @media (max-width: 1059px) {
   .footer {
-    padding: 1rem 10%;
+    padding: 0rem 10%;
   }
 }
 @media (max-width: 465px) {
   .footer img {
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
   }
   .footer {
     letter-spacing: 0.1rem;
