@@ -431,6 +431,10 @@ nav a {
   }
 }
 @media (max-width: 365px) {
+  .hero-image {
+    width: 250px;
+    height: 250px;
+  }
   .hero-text h1 {
     font-size: 1.6rem;
   }
